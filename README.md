@@ -17,7 +17,9 @@ Desafio proposto no LaunchBase da [Rocketseat](https://rocketseat.com.br/). A id
 ### Etapas
 A primeira etapa consistiu em criar as rotas e desenvolver o header. 
 
+A segunda etapa consistiu na criação de um card contendo informações sobre os professores, como foto, nome, idade, grau de escolaridade, tipo de aula, materias ensinadas e data de entrada na plataforma.
 
+<img src="public/images/card.png" >
 ---
 ### Produção
 Projeto desenvolvido por Camila Almeida Diniz.
