@@ -1,0 +1,86 @@
+{% extends "../layout.njk" %}
+
+{% block content %}
+
+<form class="card" method="POST" action="/teachers">
+  <section class="photo" style = "background: url(https://source.unsplash.com/collection/8491653/400x400) 
+    no-repeat center center / cover">
+  </section>
+
+  <section class="information">
+    <h3> Cadastro de novo professor: </h3>
+
+    <div class="item">
+      <div>URL da foto: </div>
+      <div>
+        <input 
+          type="url"
+          name="avatar_url"
+          placeholder="HTTP://....."
+        >
+      </div>
+    </div>
+
+    <div class="item">
+      <div>Nome Completo</div>
+      <div>
+        <input 
+        type="text"
+        name="name"
+        placeholder="Nome completo do professor(a)"
+        >
+      </div>
+    </div>
+
+    <div class="item">
+      <div> Data de Nascimento </div>
+      <div>
+        <input 
+        type="date"
+        name="birth"
+        >
+      </div>
+    </div>
+
+    <div class="item">
+      <div>Grau de Escolaridade</div>
+        <input list="scholarities" name="scholarity">
+          <datalist id="scholarities">
+            <option value="Ensino Médio Completo">
+            <option value="Ensino Superior Completo">
+            <option value="Especialização">
+            <option value="Mestrado">
+            <option value="Doutorado">
+          </datalist>
+      </div>
+    </div>
+
+    <div class="item">
+      <div> Tipo de Aula </div>
+        <input list="typeOfClass" name="typeOfClass">
+          <datalist id="typeOfClass">
+            <option value="Presencial">
+            <option value="À distância">
+          </datalist>
+      </div>
+    </div>
+
+    <div class="item">
+      <div>Acompanhamento </div>
+      <div>
+        <input 
+        type="text"
+        name="disciplines"
+        placeholder="Digite as disciplinas separadas por vírgulas">
+      </div>
+    </div>
+
+    <div class="button">
+      <button type="submit">
+        <p> Salvar</p>  
+    </button>
+    </div>
+  </section>
+</form>
+
+{% endblock content %}

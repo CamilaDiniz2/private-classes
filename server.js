@@ -5,6 +5,9 @@ const routes   = require("./routes")
 // cria o servidor e o executa
 const server = express()
 
+// configura o express para ler os dados do formulario -> funcionar o req.body
+server.use(express.urlencoded( { extended:true}))
+
 // configura para receber arquivos estáticos
 server.use(express.static('public'))
 
